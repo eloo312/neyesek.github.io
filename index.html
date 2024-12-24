@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ruh Haline Göre Öneriler</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Ruh Haline Göre Yiyecek, İçecek ve Bitki Önerileri</h1>
+    </header>
+
+    <main>
+        <!-- Kullanıcıdan bilgi alacağımız form -->
+        <form id="surveyForm">
+            <label for="age">Kaç Yaşındasın:</label>
+            <input type="number" id="age" required>
+
+            <label for="height">Boyun (cm):</label>
+            <input type="number" id="height" required>
+
+            <label for="health">Sağlık Durumun:</label>
+            <select id="health" required>
+                <option value="healthy">Sağlıklıyım</option>
+                <option value="unhealthy">Sağlıksızım</option>
+                <option value="average">Ortalama</option>
+            </select>
+
+            <label for="food_preference">Yiyecek Tercihlerin:</label>
+            <select id="food_preference" required>
+                <option value="healthy">Sağlıklı Beslenmeyi Tercih Ederim</option>
+                <option value="standard">Standart Beslenmeyi Tercih Ederim</option>
+                <option value="unhealthy">Sağlıksız Besleniyorum</option>
+            </select>
+
+            <label for="sleep">Uyku Düzenin:</label>
+            <select id="sleep" required>
+                <option value="regular">Düzenli</option>
+                <option value="irregular">Düzensiz</option>
+            </select>
+
+            <button type="submit">Önerileri Al</button>
+        </form>
+
+        <!-- Öneriler burada gösterilecek -->
+        <div id="suggestions">
+            <div id="food_suggestion"></div>
+            <div id="drink_suggestion"></div>
+            <div id="plant_suggestion"></div>
+        </div>
+    </main>
+
+    <footer>
+        <p>Emircan Yemiş Gururla Sunar..</p>
+        <p>Copyright © 2024 tüm hakları saklıdır.</p>
+    </footer>
+
+    <!-- JavaScript dosyasını bağla -->
+    <script src="script.js"></script>
+</body>
+</html>
